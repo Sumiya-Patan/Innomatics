@@ -1,0 +1,293 @@
+ body {
+    background-color: rgb(126, 104, 88);
+ }
+.text-clip{
+    font-size: 11rem;
+    background: url(https://5.imimg.com/data5/SELLER/Default/2021/8/AP/WL/GJ/5504430/roasted-coffee-beans.jpg);
+    background-size: 100% 100%;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: rgb(105, 47, 5);
+}
+
+a:visited{
+    color: bisque;
+}
+
+a:hover{
+    color: burlywood;
+}
+
+a;:active{
+    color: rgb(226, 103, 15);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.buttons{
+    border: 1px solid chocolate;
+    border-radius: 15px 50px;
+    width: auto;
+    background-color: rgb(95, 43, 5);
+    
+    padding: 5px 10px;
+    box-shadow: 10px 5px rgba(212, 153, 94, 0.855);
+    display: inline-flex;
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    background: url(coffee.jpg);
+    background-size:100% 100% ;
+    align-items: center;
+    position: relative;
+    height: 30vh;
+    color: rgb(104, 46, 5);
+}
+
+.hero-desc{
+    position: relative;
+    z-index: 2;
+} 
+
+.hero-title{
+    font-size: 3rem;
+    margin: 0%;
+    color: bisque;
+
+}
+
+.hero{
+    font-size: 1rem;
+    margin: 1rem;
+    color: beige;
+    -webkit-text-stroke: 1px rgb(88, 74, 53);
+}
+
+.hero-button {
+    background-color: #ff7e67;
+    color: rgb(87, 81, 81);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #ff5740;
+}
+  
+.menu {
+    padding: 50px 20px;
+}
+
+.menu-heading {
+    font-size: 2rem;
+    color: #333;
+    margin: 40px 0;
+    text-align: center;
+    border-bottom: 3px solid #444;
+    display: inline-block;
+    width:auto;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.items {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 250px;
+}
+
+.items:hover {
+    transform: translateY(-5px);
+}
+
+.items img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.items h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #222;
+}
+
+.items p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.items span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 10px;
+}
+
+.about-us {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    color: #555;
+}
+
+.image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+    }
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 30px 15px;
+    }
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
