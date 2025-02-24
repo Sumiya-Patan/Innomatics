@@ -3,9 +3,11 @@ const cartLogo = document.querySelector('#cartLogo');
 const productItems = document.querySelectorAll('.item');
 const cartContainer = document.querySelector('.cart-container');
 const totalPriceElement = document.querySelector('.total-price');
-const cart = document.querySelector('#cart'); // Cart container
+const cart = document.querySelector('#cart');
 const body = document.body;
-const existingCartItems = document.querySelector('cart-item');
+
+// Retrieve cart items from local storage or initialize an empty array
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
 // Store product data
 const products = [
@@ -13,9 +15,6 @@ const products = [
     { id: 2, name: "Product 2", price: 1999 },
     { id: 3, name: "Product 3", price: 5999 },
 ];
-
-// Cart items array
-let cartItems = [];
 
 // Function to initialize the product buttons
 productItems.forEach((item, index) => {
@@ -76,6 +75,9 @@ function updateCart() {
     // Update cart item count in the cart icon
     const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
     cartLogo.querySelector('.fa-cart-shopping').textContent = ` ${totalItems}`;
+
+    // Save cart items to local storage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
 
 // Change quantity of an item in the cart
@@ -98,7 +100,6 @@ function removeFromCart(index) {
 // Initial setup
 updateCart();
 
-
 // Toggle cart visibility when the cart icon is clicked
 cartLogo.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent default link behavior
@@ -117,12 +118,3 @@ document.addEventListener('click', (e) => {
         body.classList.remove('cart-open'); // Allow background scroll
     }
 });
-
-
-
-
-    
-   
-           
-        
-   
