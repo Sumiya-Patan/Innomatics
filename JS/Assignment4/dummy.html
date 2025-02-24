@@ -1,0 +1,81 @@
+<section id="cart">
+    <h2> Your Cart</h2>    
+    <div class="cart-container">
+        <div class="cart-item" id="prod1">
+            <p>Product 1 -</p>
+            <p class="price">$2999</p>
+            <div class="cartButtons">
+                <button class="increase">+
+                </button>
+                <span class="qty">1</span>
+                <button class="deccrease">-</button>
+                <button class="remove">Remove</button>
+            </div>  
+        </div>
+        <div class="cart-item" id="prod2">
+            <p>Product 2 -</p>
+            <p class="price">$1999</p>
+            <div class="cartButtons">
+                <button class="increase">+
+                </button>
+                <span class="qty">1</span>
+                <button class="deccrease">-</button>
+                <button class="remove">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item" id="prod3">
+            <p>Product 3 -</p>
+            <p class="price">$5999</p>
+            <div class="cartButtons">
+                <button class="increase">+
+                </button>
+                <span class="qty">1</span>
+                <button class="deccrease">-</button>
+                <button class="remove">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item " >
+            <h3> Total Cost: $</h3>
+            <span class="total-price">0</span>
+            
+
+        </div>
+    </div>
+    </section>
+
+
+    #cart{
+    
+    
+        width: 30%;
+        height: 90vh;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 1);
+    }
+    .cart-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        margin: 0;
+        background-color: white;
+        flex-direction: column;
+        
+        border-radius: 5px;
+      
+        
+        
+    
+    }
+    .cart-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+        background: #e9caca;
+        border-radius: 4px;
+    }
+    #cart.show{
+        right: 0;
+    }

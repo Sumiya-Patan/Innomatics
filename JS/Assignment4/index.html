@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -26,62 +27,45 @@
         <div class="buttons">
             <a href="#">Devices</a>
         </div>
-        <div class="buttons" id="logo">🛒</div>
+        <div class="buttons" >
+            <a href="" id="cartLogo">
+                <i class="fa-solid fa-cart-shopping">  0</i>
+            </a>
+        </div>
     </nav>
 
     <section class="products">
         <div class="prod-container">
             <h2>Products</h2>
             <div class="item" id="item1">
-                <span>Product 1 - 2999rs</span>
+                <span>Product 1 - 2999.00$</span>
                 <button class="Add2cart">Add To Cart</button>
             </div>
             <div class="item" id="item2">
-                <span>Product 2 - 1999rs</span>
+                <span>Product 2 - 1999.00$</span>
                 <button class="Add2cart">Add To Cart</button>
             </div>
             <div class="item" id="item3">
-                <span>Product 3 - 5999rs</span>
+                <span>Product 3 - 5999.00 $</span>
                 <button class="Add2cart">Add To Cart</button>
             </div>
         </div>
     </section>
 
     <section id="cart">
-    <div class="cart-container">
-            <h2> Your Cart</h2>
-        <div class="cart-item" id="prod">
-            <p>Product 1 - 2999rs</p>
-            <button id="increase">+
-            </button>
-            <span id="qty">1</span>
-            <button id="deccrease">-</button>
-            <button id="remove">Remove</button>
+        <h2>Your Cart</h2>    
+        <div class="cart-container">
+            <!-- Cart items will be dynamically added here -->
+            <div class="cart-item">
+                <h3>Total Cost: $<span class="total-price">0</span></h3>
+            </div>
         </div>
-        <div class="cart-item" id="prod">
-            <p>Product 2 - 1999rs</p>
-            <button id="increase">+
-            </button>
-            <span id="qty">1</span>
-            <button id="deccrease">-</button>
-            <button id="remove">Remove</button>
-        </div>
-        <div class="cart-item" id="prod">
-            <p>Product 3 - 5999rs</p>
-            <button id="increase">+
-            </button>
-            <span id="qty">1</span>
-            <button id="deccrease">-</button>
-            <button id="remove">Remove</button>
-        </div>
-        <div class="cart-item" >
-            <h3> Total Cost: Rs
-                <span id="total">0.00</span>
-            </h3>
-
-        </div>
-    </div>
     </section>
+
+
+
+    
+    <script src="script.js"></script>
 
 </body>
 </html>
